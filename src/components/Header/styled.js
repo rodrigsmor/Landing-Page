@@ -21,14 +21,17 @@ export const header = styled.header`
     background: purple;
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 780px) {
     .headerContainer {
       flex-direction: column;
-      height: 50vh;
+      height: auto;
+      margin-top: -50vh;
+      transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+      border-radius: 0 0 25px 25px;
     }
 
     .headerContainer.active {
-      margin-top: 400px;
+      margin-top: 0;
     }
   }
 `;
@@ -58,11 +61,12 @@ export const headerFixed = styled.div`
     color: #169873;
   }
 
-  .button {
+  .toggleButton {
     display: none;
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 780px) {
+    top: 0;
     width: 100%;
     padding: 0 8%;
     height: 4.5rem;
@@ -82,15 +86,17 @@ export const headerFixed = styled.div`
 
     .toggleButton span {
       width: 100%;
-      height: 2px;
+      height: 5px;
       display: block;
       margin: 6px 0;
+      border-radius: 15px;
       position: relative;
       background: #fff;
       transition: .3s linear;
     }
 
     .toggleButton.active span:nth-child(1) {
+        margin-top: 0px;
         transform: rotate(-45deg);
     }
 
@@ -100,14 +106,15 @@ export const headerFixed = styled.div`
 
     .toggleButton.active span:nth-child(3) {
         transform: rotate(45deg);
-        margin-top: -15px;
+        margin-top: -20px;
     }
   }
 `;
 
 export const nav = styled.nav`
   display: flex;
-  width: 58%;
+  width: 70%;
+  min-width: 600px;
   align-items: center;
   justify-content: space-between;
 
@@ -125,7 +132,7 @@ export const nav = styled.nav`
     color: #fff;
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 780px) {
     flex-direction: column-reverse;
     margin: 4.5rem 0 0 0;
 
@@ -133,6 +140,7 @@ export const nav = styled.nav`
       display: flex;
       line-height: 50px;
       flex-direction: column;
+      padding: 0;
     }
 
     ul {
@@ -148,11 +156,11 @@ export const searchBar = styled.div`
   background: gray;
   border-radius: 15px;
   flex-direction: row;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 15px;
   justify-content: space-between;
 
-  @media screen and (max-width: 900px) {
-    width: 80%;
+  @media screen and (max-width: 780px) {
+    width: 90vw;
   }
 `;
 
@@ -170,7 +178,7 @@ export const input = styled.input`
   background: transparent;
   outline: none;
   border: none;
-  width: 85%;
+  width: 80%;
   color: #fff;
   font-family: Poppins, sans-serif;
 
