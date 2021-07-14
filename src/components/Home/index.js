@@ -32,19 +32,19 @@ export default function Home() {
                                 <input type="submit" value="cadastrar"/>
                             </div>
                         </div>
+
+                        <S.socialMedias>
+                            <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                            <a href=""><i class='bx bxl-twitter' ></i></a>
+                            <a href=""><i class='bx bxl-linkedin' ></i></a>
+                            <a href=""><i class='bx bxl-instagram' ></i></a>
+                        </S.socialMedias>
                     </div>
                </S.content>
 
                <S.boxImage>
                    <S.image src="/img/discount.svg"/>
                </S.boxImage>
-
-               <S.socialMedias>
-                    <a href=""><i class='bx bxl-facebook-circle'></i></a>
-                    <a href=""><i class='bx bxl-twitter' ></i></a>
-                    <a href=""><i class='bx bxl-linkedin' ></i></a>
-                    <a href=""><i class='bx bxl-instagram' ></i></a>
-                </S.socialMedias>
             </S.homeContainer>
         </S.Home>
     );
