@@ -51,6 +51,65 @@ export const content = styled.div`
     .CTA:hover {
         background: #cc0025;
     }
+
+    .notAppear {
+        display: none;
+    }
+
+    .appear {
+        margin: 30px 0 0;
+        animation: appear .5s linear;
+
+        div {
+            padding: 5px 5px 5px 20px;
+            width: fit-content;
+            background: #FCD4D9;
+            border-radius: 30px;
+            margin: 10px 0 0;
+            border: 1px solid #962062;
+        }
+
+        input[type^="email"] {
+            background: transparent;
+            border: transparent;
+            outline: none;
+            color: #962062;
+            font-size: 13px;
+            width: 15vw;
+            font-family: Poppins, sans-serif;
+
+            &::-webkit-input-placeholder {
+                color: #962062;
+            }
+        }
+
+        input[type^="submit"] {
+            background: #fe4365;
+            border: transparent;
+            padding: 5px;
+            margin: 0 0 0 10px;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: 1s all;
+            font-family: Poppins, sans-serif;
+            color: #fff;
+        }
+
+        input[type^="submit"]:hover {
+            background: #cc0025;
+        }
+    }
+
+    @keyframes appear {
+        from {
+            opacity: 0;
+            margin: 0;
+        }
+        to {
+            opacity: 1;
+            margin: 30px 0 0;
+        }
+    }
 `;
 
 export const headline = styled.div`
@@ -84,9 +143,30 @@ export const headline = styled.div`
 `;
 
 export const boxImage = styled.div`
-
+    
 `;
 
 export const image = styled.img`
+    width: auto;
+    height: 60vh;
+    min-height: 40vh;
+`;
 
+export const socialMedias = styled.div`
+    position: absolute;
+    display: flex;
+    width: 150px;
+    bottom: 30px;
+    right: 50px;
+    justify-content: space-between;
+
+    a {
+        transition: 1s all;
+        font-size: 30px;
+        color: #fe4365;
+
+        &:hover {
+            color: #962062;
+        }
+    }
 `;

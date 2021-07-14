@@ -164,7 +164,7 @@ export const searchBar = styled.div`
   height: 30px;
   width: 200px;
   display: flex;
-  background: #f4b0b0;
+  background: #FCD4D9;
   border-radius: 15px;
   flex-direction: row;
   padding: 0 0 0 15px;
@@ -181,11 +181,11 @@ export const button = styled.button`
   height: 28px;
   line-height: 0;
   border: none;
+  color: #FCD4D9;
   cursor: pointer;
   border-radius: 50%;
   background: #fe4365;
-  color: #962062;
-  transition: all 1s;
+  transition: all .5s;
   border-left: solid 1px #962062;
 
   &:hover {

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import * as S from './styled';
-var click = false;
 
 export default function Header() {
 
