@@ -5,34 +5,28 @@ export default function Home() {
     return (
         <S.Home id="HOME">
             <S.homeContainer>
-                <S.headline>
-                    <h3>É promoção que você queria?</h3>
-                    <p> Mais de 2.000 clientes consultaram os preços e saíram satisfeitos com suas compras! </p>
-                </S.headline>
+               <S.content>
+                    <S.headline>
+                        <h2>BLACK</h2> 
+                        <h2>FRIDAY</h2>
+                        <h3>ERA PROMOÇÃO QUE VOCÊS QUERIAM?</h3>
+                    </S.headline>
 
-                <S.contentWrapper> 
-                    <p>
-                        A <strong><span>Market</span>Lify</strong> está com promoções bombástica nesse Black Friday, hein? Vai perder essa oportunidade, não, né? O gerente ficou loucooo, está ofertando os produtos com descontos de até 50%, vê se não é uma oportunidade imperdível?! mas não se acanha não, hein? Porque é por tempo limitado!
+                    <div className="textBox">
+                        <h4>Mais de 2.000 clientes consultaram as promoções e saíram satisfeitos!</h4>
+                        <p> 
+                            A <strong>MarketLify</strong> está com promoções bombásticas nesse Black Friday, hein? Estamos ofertando os produtos com descontos de até <strong>50%</strong>, vê se não é uma oportunidade imperdível?! mas não se acanha não, hein? Porque é por tempo limitado! Vai perder essa oportunidade, não, né? 
+                        </p>
 
-                        <br/>
-                        <br/>
+                        <button className="CTA">
+                            Receber novidades no e-mail
+                        </button>
+                    </div>
+               </S.content>
 
-                        Fique por dentro das novidades! 
-                    </p>
-
-                    <button>Fique por dentro das novidades</button>
-                </S.contentWrapper>
-
-                <S.boxImage>
-                    <S.image src="/img/shopping1.svg"/>
-                </S.boxImage>
-
-                <S.socialMedias>
-                    <a href=""><i class='bx bxl-facebook-circle'></i></a>
-                    <a href=""><i class='bx bxl-twitter' ></i></a>
-                    <a href=""><i class='bx bxl-linkedin' ></i></a>
-                    <a href=""><i class='bx bxl-instagram' ></i></a>
-                </S.socialMedias>
+               <S.boxImage>
+                   <S.image src="/img/shopping1.svg"/>
+               </S.boxImage>
             </S.homeContainer>
         </S.Home>
     );

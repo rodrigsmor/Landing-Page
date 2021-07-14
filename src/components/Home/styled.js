@@ -4,7 +4,7 @@ export const Home = styled.section`
     height: 100vh;
     width: 100%;
     background: #fff;
-    color: white;
+    color: #594f4f;
     font-family: Poppins, sans-serif;
 `;
 
@@ -12,70 +12,81 @@ export const homeContainer = styled.div`
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    padding: 8%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 `;
 
-export const headline = styled.div`
-    font-size: 15px;
-    width: 60vw;
-    margin: 0 0 0 10%;
+export const content = styled.div`
+    display: flex;
+    flex-direction: column;
 
-    h3 {
-        font-size: 44px;
-        font-weight: 700;
+    .textBox {
+        padding: 30px 0 30px 20px;
+        width: 620px;
+        border-left: 3px solid #fe4365;
+    }
+
+    p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .CTA {
+        width: auto;
+        color: #fff;
+        height: auto;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        margin: 30px 0 0;
+        transition: all 1s;
+        padding: 15px 20px;
+        border-radius: 30px;
+        font-family: Poppins, sans-serif;
+        background: #fe4365;
+    }
+
+    .CTA:hover {
+        background: #cc0025;
     }
 `;
 
-export const contentWrapper = styled.div`
-    padding: 30px 0px 30px 20px;
-    border-left: 2px solid #fff;
-    text-align: justify;
-    margin: 30px 0 0 10%;
-    width: 40vw;
-    z-index: 2;
-    position: relative;
+export const headline = styled.div`
+    display: inline-flex;
+    flex-wrap: wrap;
 
-    button {
-        margin-top: 25px;
-        outline: none;
-        font-size: 15px;
-        background: red;
-        font-family: Poppins, sans-serif;
-        font-weight: 500;
-        cursor: pointer;
-        border-radius: 30px;
-        padding: 10px 15px;
+    h2 {
+        width: auto;
+        height: auto;
+        color: #fff;
+        font-weight: 800;
+        padding: 10px 25px;
+        background: #fe4365;
+        border: 3px solid #fe4365;
+    }
+
+    h2:nth-of-type(2) {
+        color: #fe4365;
+        background: transparent;
+    }
+
+    h3{
+        width: 300px;
+        margin: 15px 0;
+        font-size: 50px;
+        flex-basis: 100%;
+        font-weight: 900;
+        line-height: 50px;
+        text-align: justify;
     }
 `;
 
 export const boxImage = styled.div`
-    position: absolute;
-    display: flex;
-    width: 100vw;
-    padding: 0 10%;
-    height: 100vh;
-    justify-content: flex-end;
-    align-items: flex-end;
+
 `;
 
 export const image = styled.img`
-    height: 75vh;
-    width: auto;
-    z-index: 1;
-    align-self: center;
-`;
 
-export const socialMedias = styled.div`
-    width: 150px;
-    display: flex;
-    bottom: 20px;
-    right: 50px;
-    position: absolute;
-    font-size: 25px;
-    justify-content: space-between;
-
-    a {
-        color: white;
-    }
 `;
