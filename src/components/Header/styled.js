@@ -1,38 +1,38 @@
 import styled from "styled-components";
 
 export const header = styled.header`
-  height: 4rem;
-  width: 100%;
   top: 0;
-  position: fixed;
   z-index: 9;
+  width: 100%;
+  height: 4rem;
+  position: fixed;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 
   .headerContainer {
-    display: flex;
-    z-index: 1000;
     width: 100%;
     height: 100%;
-    font-size: 15px;
-    font-weight: 300;
+    display: flex;
+    z-index: 1000;
     color: #962062;
-    background: transparent;
+    font-size: 15px;
+    padding: 0px 8%;
+    font-weight: 300;
+    background: #fff;
+    align-items: center;
     justify-content: space-between;
     font-family: Poppins, sans-serif;
-    align-items: center;
-    padding: 0px 8%;
-    background: #fff;
   }
 
   @media screen and (max-width: 780px) {
     .headerContainer {
-      flex-direction: column;
       height: auto;
+      width: 100vw;
       position: fixed;
       margin-top: -50vh;
+      flex-direction: column;
+      border-radius: 0 0 25px 25px;
       box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
       transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
-      border-radius: 0 0 25px 25px;
     }
 
     .headerContainer.active {
@@ -42,16 +42,16 @@ export const header = styled.header`
 `;
 
 export const headerFixed = styled.div`
-  font-size: 20px;
-  align-items: center;
   display: flex;
+  font-size: 20px;
   cursor: pointer;
+  align-items: center;
   justify-content: space-between;
 
   h1 {
     font-size: 20px;
-    margin: 0 0 0 5px;
     font-weight: 500;
+    margin: 0 0 0 5px;
   }
 
   .logo_Icon {
@@ -74,17 +74,18 @@ export const headerFixed = styled.div`
   @media screen and (max-width: 780px) {
     top: 0;
     width: 100%;
-    padding: 0 8%;
     height: 4rem;
+    padding: 0 8%;
     position: fixed;
+    background: #fff;
     align-items: center;
 
     .toggleButton {
+      z-index: 9;
       width: 50px;
       height: 30px;
       border: none;
       outline: none;
-      z-index: 9;
       display: block;
       cursor: pointer;
       background: transparent;
@@ -93,10 +94,10 @@ export const headerFixed = styled.div`
     .toggleButton span {
       width: 100%;
       height: 5px;
-      display: block;
       margin: 6px 0;
-      border-radius: 15px;
+      display: block;
       position: relative;
+      border-radius: 15px;
       background: #962062;
       transition: .3s linear;
     }
@@ -118,25 +119,25 @@ export const headerFixed = styled.div`
 `;
 
 export const nav = styled.nav`
-  display: flex;
   width: 70%;
+  display: flex;
   min-width: 600px;
   align-items: center;
   justify-content: space-between;
 
   li {
-    display: inline-flex;
+    font-weight: 500;
     align-items: center;
     padding: 0 0 0 20px;
-    font-weight: 500;
+    display: inline-flex;
     text-decoration: none;
     list-style-type: none;
   }
 
   a {
-    text-decoration: none;
     color: #fe4365;
     transition: all 1s;
+    text-decoration: none;
   }
 
   a:hover {
@@ -144,14 +145,14 @@ export const nav = styled.nav`
   }
 
   @media screen and (max-width: 780px) {
+    margin: 4.2rem 0 0 0;
     flex-direction: column-reverse;
-    margin: 4rem 0 0 0;
 
     li {
+      padding: 0;
       display: flex;
       line-height: 50px;
       flex-direction: column;
-      padding: 0;
     }
 
     ul {
@@ -179,8 +180,8 @@ export const searchBar = styled.div`
 export const button = styled.button`
   width: 28px;
   height: 28px;
-  line-height: 0;
   border: none;
+  line-height: 0;
   color: #FCD4D9;
   cursor: pointer;
   border-radius: 50%;
@@ -194,11 +195,11 @@ export const button = styled.button`
 `;
 
 export const input = styled.input`
-  background: transparent;
-  outline: none;
-  border: none;
   width: 80%;
+  border: none;
+  outline: none;
   color: #962062;
+  background: transparent;
   font-family: Poppins, sans-serif;
 
   ::-webkit-input-placeholder {

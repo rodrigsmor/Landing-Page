@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Home = styled.section`
     height: 100vh;
     width: 100vw;
-    background: #fff;
+    background: #000;
     color: #594f4f;
     font-family: Poppins, sans-serif;
 `;
