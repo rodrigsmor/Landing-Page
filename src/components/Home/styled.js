@@ -1,18 +1,18 @@
 import styled from 'styled-components';
 
 export const Home = styled.section`
-    height: 100vh;
     width: 100vw;
-    background: #000;
     color: #594f4f;
+    background: #fff;
+    height: fit-content;
     font-family: Poppins, sans-serif;
 `;
 
 export const homeContainer = styled.div`
-    width: 100vw;
+    padding: 8%;
+    width: 100%;
     height: 100vh;
     display: flex;
-    padding: 8%;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
@@ -220,7 +220,12 @@ export const headline = styled.div`
 `;
 
 export const boxImage = styled.div`
-    
+    height: max-content;
+    width: fit-content;
+
+    @media screen and (max-width: 780px) {
+        margin: -8vh 0 0;
+    }
 `;
 
 export const image = styled.img`
@@ -231,7 +236,6 @@ export const image = styled.img`
     @media screen and (max-width: 780px) {
         width: 60vw;
         height: auto;
-        margin: -40px 0 0;
     }
 `;
 

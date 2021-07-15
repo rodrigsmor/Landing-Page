@@ -25,8 +25,8 @@ export default function Header() {
         
         <S.nav>
           <ul>
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>Quem somos?</li></a>
+            <a href="#HOME"><li>Home</li></a>
+            <a href="#quem-somos"><li>Quem somos?</li></a>
             <a href="#"><li>Testimonials</li></a>
             <a href="#"><li>Contato</li></a>
           </ul>
