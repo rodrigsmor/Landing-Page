@@ -41,11 +41,15 @@ export default function Footer() {
                         <h1>Market<span>Lify</span></h1>
                     </div>
 
-                    <i class='bx bxs-phone'></i>
-                    <p>+55 (00) 00000-0000</p>
+                    <div className="items">
+                        <i class='bx bxs-phone'></i>
+                        <p>+55 (00) 00000-0000</p>
+                    </div>
 
-                    <i class='bx bx-at'></i>
-                    <p>marketlify.prof@market.lify.com</p>
+                    <div className="items">
+                        <i class='bx bx-at'></i>
+                        <p>marketlify.prof@market.lify.com</p>
+                    </div>
                 </S.contacts>
             </S.container>
 

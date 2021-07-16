@@ -4,6 +4,7 @@ export const Footer = styled.footer`
     width: 100vw;
     height: fit-content;
     background: #cc0025;
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0% 100%);
 
     .footer {
         color: #fff;
@@ -33,6 +34,10 @@ export const container = styled.div`
    flex-direction: row;
    align-items: center;
    justify-content: space-between;
+
+   @media screen and (max-width: 530px) {
+        padding: 2rem 5vw;
+   }
 `;
 
 export const boxItems = styled.div`
@@ -103,28 +108,47 @@ export const inputWrapper = styled.div`
         transition: 1s all;
         font-family: Poppins, sans-serif;
         color: #fff;
+
+        &:hover {
+            background: #cc0025;
+        }
     }
 
-    input[type^="submit"]:hover {
-        background: #cc0025;
+    @media screen and (max-width: 680px) {
+        margin: 30px 0 0;
+        
+        label {
+            font-size: 13px;
+        }
+        
+        input[type^="email"] {
+            width: 50vw;
+        }
+
+        input[type^="submit"] {
+            font-size: 12px;
+        }
+    }
+
+    @media screen and (max-width: 265px) {
+        input[type^="email"] {
+            width: 45vw;
+        }
     }
 `;
 
 export const contacts = styled.div`
-    flex-basis: 100%;
+    color: #fff;
     display: flex;
     margin: 30px 0 0;
-    color: #fff;
-    font-family: Poppins, sans-serif;
+    flex-basis: 100%;
     align-items: center;
+    font-family: Poppins, sans-serif;
 
     i {
         color: #5e020d;
         font-size: 20px;
         margin: 0 5px 0 15px;
-    }
-
-    p {
     }
 
     .logo_Icon {
@@ -146,6 +170,57 @@ export const contacts = styled.div`
 
         i {
             margin: 0 0 0 0;
+        }
+    }
+
+    .items {
+        display: flex;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 790px) {
+        i, p {
+            font-size: 13px;
+        }
+    }
+
+    @media screen and (max-width: 670px) {
+        i, p {
+            font-size: 12px;
+        }
+    }
+
+    @media screen and (max-width: 630px) {
+        flex-wrap: wrap;
+
+        .items {
+            margin: 0 10px 0 0;
+        }
+
+        .logo_Icon {
+            width: 100vw;
+            flex-basis: 100%;
+        }
+
+        i, p {
+            line-height: 30px;
+        }
+
+        i:first-of-type {
+            margin: 0 0 0 0;
+        }
+    }
+
+    @media screen and (max-width: 410px) {
+        .items {
+            display: flex;
+            flex-basis: 100%;
+
+            .bx-at {
+                margin: 0 5px 0 0;
+                width: fit-content;
+                height: fit-content;
+            }
         }
     }
 `;
