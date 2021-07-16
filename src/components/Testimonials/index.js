@@ -30,7 +30,7 @@ export default function Testimonials() {
                                 <img src="./img/pictures/testimonial1.png" alt="foto de perfil do usuário"/>
                             </div>
 
-                            <h3>Rafael Loretti</h3>
+                            <h3>Nicolas Quina</h3>
                             <h5>Curitiba, Brasil</h5>
 
                             <div className="avaliacaoUsuario">
@@ -46,7 +46,7 @@ export default function Testimonials() {
                         <i class='bx bxs-quote-left'></i>
 
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare magna at sagittis eleifend. Morbi et congue orci. Suspendisse magna mi, tempor vitae congue vel, finibus at velit. 
+                            et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing.
                         </p>
 
                         
@@ -58,7 +58,7 @@ export default function Testimonials() {
                             </div>
 
                             <div className="circleImage">
-                                <img src="./img/pictures/testimonial1.png" alt="foto de perfil do usuário"/>
+                                <img src="./img/pictures/testimonial2.png" alt="foto de perfil do usuário"/>
                             </div>
 
                             <h3>Rafael Loretti</h3>
@@ -73,11 +73,12 @@ export default function Testimonials() {
                             </div>
                         </div>
                     </S.cards>
+
                     <S.cards>
                         <i class='bx bxs-quote-left'></i>
 
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare magna at sagittis eleifend. Morbi et congue orci. Suspendisse magna mi, tempor vitae congue vel, finibus at velit. 
+                            feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae.
                         </p>
 
                         
@@ -89,11 +90,11 @@ export default function Testimonials() {
                             </div>
 
                             <div className="circleImage">
-                                <img src="./img/pictures/testimonial1.png" alt="foto de perfil do usuário"/>
+                                <img src="./img/pictures/testimonial3.png" alt="foto de perfil do usuário"/>
                             </div>
 
-                            <h3>Rafael Loretti</h3>
-                            <h5>Curitiba, Brasil</h5>
+                            <h3>Giovana Brito</h3>
+                            <h5>Brasília, Brasil</h5>
 
                             <div className="avaliacaoUsuario">
                                 <i class='bx bxs-star'></i>

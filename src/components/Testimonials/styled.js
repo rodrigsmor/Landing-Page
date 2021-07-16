@@ -12,6 +12,14 @@ export const container = styled.div`
     width: 100%;
     height: 100%;
     padding: 5vw;
+
+    @media screen and (max-width: 1040px) {
+        padding: 1vw;
+    }
+
+    @media screen and (max-width: 930px) {
+        padding: 2vh 5px;
+    }
 `;
 
 export const sectionTitle = styled.div`
@@ -23,6 +31,7 @@ export const sectionTitle = styled.div`
     margin: 0 0 40px;
     align-items: center;
     flex-direction: column;
+    flex-wrap: wrap;
     
     span {
         height: 3px;
@@ -35,15 +44,19 @@ export const sectionTitle = styled.div`
 export const testimonialsWrapper = styled.div`
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: fit-content;
+    justify-content: space-between;
+
+    @media screen and (max-width: 790px) {
+        flex-direction: column;
+    }
 `;
 
 export const cards = styled.div`
     font-size: 15px;
     min-width: 25vw;
-    max-width: 400px;
+    max-width: 300px;
     border-radius: 8px;
     position: relative;
     box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.35);
@@ -55,7 +68,7 @@ export const cards = styled.div`
     }
 
     p {
-        width: 300px;
+        width: 85%;
         margin: 0 auto;
         height: 180px;
         text-align: justify;
@@ -63,15 +76,16 @@ export const cards = styled.div`
 
     .profile {
         width: 100%;
+        color: #fff;
+        display: flex;
         height: 150px;
         background: #fe4365;
         border-radius: 0 0 8px 8px;
-        display: flex;
-        color: #fff;
         flex-direction: column;
 
         svg {
             left: 0;
+            margin: -5px 0 0;
             fill: #fff;
             width: 100%;
             z-index: 1;
@@ -118,5 +132,22 @@ export const cards = styled.div`
                 border-radius: 50%;
             }
         }
+    }
+
+    @media (min-width: 790px) and (max-width: 925px) {
+        width: 30vw;
+
+        p {
+            line-height: 19px;
+        }
+    }
+
+    @media screen and (max-width: 790px) {
+        width: 300px;
+        margin: 0 auto 30px auto;
+    }
+
+    @media screen and (max-width: 300px) {
+        width: 90vw;
     }
 `;
