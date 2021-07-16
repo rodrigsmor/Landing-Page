@@ -17,7 +17,7 @@ export default function Home() {
                     <S.cards>
                         <div className="imagem">
                             <img src="./img/client-rage.svg"/>
-                            <h3>Prioridade ao Consumidor</h3>
+                            <h3>Prioridade ao Cliente</h3>
                         </div>
 
                         <p>Possuímos uma cultura de atender aos interesses do cliente e proporcionamos o máximo de satisfação, priorizando a melhor experiência de navegação e o cumprimento de todas as legislações e direitos dos consumidores.</p>

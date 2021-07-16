@@ -44,6 +44,15 @@ export const sectionTitle = styled.div`
         line-height: 15px;
         text-align: center;
     }
+
+    @media screen and (max-width: 780px) {
+        font-size: 18px;
+
+        p {
+            font-size: 13px;
+            width: 90vw;
+        }
+    }
 `;
 
 export const boxCards = styled.div`
@@ -52,6 +61,10 @@ export const boxCards = styled.div`
     align-items: center;
     height: fit-content;
     justify-content: space-between;
+
+    @media screen and (max-width: 780px) {
+        flex-direction: column;
+    }
 `;
 
 export const cards = styled.div`
@@ -81,5 +94,15 @@ export const cards = styled.div`
         height: 40%;
         margin: 0px 0 40px;
         place-items: center;
+    }
+
+    @media screen and (max-width: 780px) {
+        .imagem {
+            margin: 0 0 30px;
+        }
+
+        p {
+            font-size: 13px;
+        }
     }
 `;
