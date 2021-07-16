@@ -66,6 +66,12 @@ export const boxItems = styled.div`
             }
         }
     }
+
+    @media screen and (max-width: 410px) {
+        li {
+            font-size: 13px;
+        }
+    }
 `;
 
 export const inputWrapper = styled.div`

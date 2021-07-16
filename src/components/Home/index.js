@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import * as S from './styled';
+import { link } from 'react-scroll';
 
 export default function Home() {
 
     const [click, setClick] = useState(false);
 
     return (
-        <S.Home id="HOME">
+        <S.Home id="home">
             <S.homeContainer>
                <S.content>
                     <S.headline>

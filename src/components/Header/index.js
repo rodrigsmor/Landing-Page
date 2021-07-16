@@ -25,10 +25,10 @@ export default function Header() {
         
         <S.nav>
           <ul>
-            <a href="#HOME"><li>Home</li></a>
+            <a href="#home"><li>Home</li></a>
             <a href="#quem-somos"><li>Quem somos?</li></a>
-            <a href="#"><li>Testimonials</li></a>
-            <a href="#"><li>Contato</li></a>
+            <a href="#testimonials"><li>Testimonials</li></a>
+            <a href="#contato"><li>Contato</li></a>
           </ul>
 
           <S.searchBar>
