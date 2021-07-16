@@ -59,11 +59,7 @@ export const headerFixed = styled.div`
     align-items: center;
   }
 
-  i {
-    color: #fe4365;
-  }
-
-  span {
+  i, span {
     color: #fe4365;
   }
 

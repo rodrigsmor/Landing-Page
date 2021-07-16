@@ -4,7 +4,8 @@ export const presentation = styled.section`
     width: 100%;
     position: relative;
     height: fit-content;
-    background: #cc0025;
+    background: #fe4365;
+    clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
 `;
 
 export const container = styled.div`
