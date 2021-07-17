@@ -28,36 +28,36 @@ export default function Footer() {
                 </S.boxItems>
 
                 <S.inputWrapper>
-                    <label for="cadastrar-email">Receber novidades no E-mail</label>
+                    <label htmlFor="cadastrar-email">Receber novidades no E-mail</label>
                     <div>
-                        <input type="email" autocomplete="none" name="cadatrar-email" placeholder="informe seu e-mail"/>
+                        <input type="email" autoComplete="none" name="cadatrar-email" placeholder="informe seu e-mail"/>
                         <input type="submit" value="cadastrar"/>
                     </div>
                 </S.inputWrapper>
 
                 <S.contacts>
                     <div className="logo_Icon"> 
-                        <i class="bx bxs-shopping-bags"></i>
+                        <i className="bx bxs-shopping-bags"></i>
                         <h1>Market<span>Lify</span></h1>
                     </div>
 
                     <div className="items">
-                        <i class='bx bxs-phone'></i>
+                        <i className='bx bxs-phone'></i>
                         <p>+55 (00) 00000-0000</p>
                     </div>
 
                     <div className="items">
-                        <i class='bx bx-at'></i>
+                        <i className='bx bx-at'></i>
                         <p>marketlify.prof@market.lify.com</p>
                     </div>
                 </S.contacts>
             </S.container>
 
             <div className="footer">
-                    <p>Desenvolvido por <span>Rodrigo</span></p>
-                    <a href=""><i class='bx bxl-github'></i></a>
-                    <a href=""><i class='bx bxl-linkedin-square'></i></a>
-                </div>
+                <p>Desenvolvido por <span>Rodrigo</span></p>
+                <a href="https://www.linkedin.com/in/rodrigo-m0reira-da-silva/"><i className='bx bxl-github'></i></a>
+                <a href="https://github.com/rodrigsmor"><i className='bx bxl-linkedin-square'></i></a>
+            </div>
         </S.Footer>
     );
 }

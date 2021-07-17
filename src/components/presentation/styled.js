@@ -6,16 +6,28 @@ export const presentation = styled.section`
     height: fit-content;
     background: #fe4365;
     clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
+
+    @media screen and (max-width: 830px) {
+        clip-path: polygon(0 4%, 100% 0, 100% 96%, 0% 100%);
+    }
 `;
 
 export const container = styled.div`
     width: 100%;
     height: 100%;
-    padding: 4% 0;
+    padding: 5vh 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
+    @media screen and (max-width: 945px) {
+        padding: 7vh 0 8vh;
+    }
+
+    @media screen and (max-width: 780px) {
+        padding: 8vh 0 5vh;
+    }
 `;
 
 export const sectionTitle = styled.div`

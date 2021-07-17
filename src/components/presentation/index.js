@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import * as S from './styled';
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
                 <S.boxCards>
                     <S.cards>
                         <div className="imagem">
-                            <img src="./img/client-rage.svg"/>
+                            <img src="./img/client-rage.svg" alt="imagem ilustrativa que representa um cliente avaliando o site"/>
                             <h3>Prioridade ao Cliente</h3>
                         </div>
 
@@ -25,7 +25,7 @@ export default function Home() {
 
                     <S.cards>
                         <div className="imagem">
-                            <img src="./img/delivery.svg"/>
+                            <img src="./img/delivery.svg" alt="imagem ilustrativa que representa uma entrega. Há uma caixa de entrega com riscos que indicam movimento."/>
                             <h3>Entrega rápida e segura</h3>
                         </div>
 
@@ -34,7 +34,7 @@ export default function Home() {
                     
                     <S.cards>
                         <div className="imagem">
-                            <img src="./img/user-interface.svg"/>
+                            <img src="./img/user-interface.svg" alt="imagem ilustrativa que representa uma interface de usuário. Há um layout de usuário na imagem."/>
                             <h3>Fácil e rápido de usar</h3>
                         </div>
 
