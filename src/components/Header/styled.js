@@ -23,6 +23,12 @@ export const header = styled.header`
     font-family: Poppins, sans-serif;
   }
 
+  @media (min-width: 780px) and (max-width: 936px) {
+    .headerContainer {
+      padding: 0 4%;
+    }
+  }
+
   @media screen and (max-width: 780px) {
     .headerContainer {
       height: auto;
@@ -56,6 +62,7 @@ export const headerFixed = styled.div`
 
   .logo_Icon {
     display: flex;
+    max-width: fit-content;
     align-items: center;
   }
 
@@ -122,7 +129,7 @@ export const headerFixed = styled.div`
 export const nav = styled.nav`
   width: 70%;
   display: flex;
-  min-width: 600px;
+  min-width: 650px;
   align-items: center;
   justify-content: space-between;
 
@@ -143,6 +150,11 @@ export const nav = styled.nav`
 
   a:hover {
     color: #962062;
+  }
+
+  @media (min-width: 780px) and (max-width: 800px) {
+    width: 90%;
+    min-width: 78vw;
   }
 
   @media screen and (max-width: 780px) {

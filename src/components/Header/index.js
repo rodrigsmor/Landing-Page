@@ -7,10 +7,10 @@ export default function Header() {
 
   return (
     <S.header>
-      <div className={click === false ? 'headerContainer' : 'headerContainer active'}>
+      <div className={click === false ? 'headerContainer' : 'headerContainer active'} role="menu">
         <S.headerFixed>
           <div className="logo_Icon"> 
-            <i class="bx bxs-shopping-bags"></i>
+            <i className="bx bxs-shopping-bags"></i>
             <h1>Market<span>Lify</span></h1>
           </div>
           
@@ -27,13 +27,13 @@ export default function Header() {
           <ul>
             <a href="#home"><li>Home</li></a>
             <a href="#quem-somos"><li>Quem somos?</li></a>
-            <a href="#testimonials"><li>Testimonials</li></a>
+            <a href="#testimonials"><li>Depoimentos</li></a>
             <a href="#contato"><li>Contato</li></a>
           </ul>
 
           <S.searchBar>
             <S.input type="search" placeholder="Pesquise..."/>
-            <S.button type="search">{<i class="bi bi-search"></i>}</S.button>
+            <S.button type="search">{<i className="bi bi-search"></i>}</S.button>
           </S.searchBar>
         </S.nav>
       </div>

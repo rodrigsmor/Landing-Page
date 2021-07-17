@@ -11,7 +11,7 @@ export default function Home() {
         const senhaRegex = /^([a-zA-Z][^<>\"!@[\]#$%¨&*()~^:;ç,\-´`=+{}º\|/\\?]{1,})@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         let response = senhaRegex.test(String(email).toLowerCase());
 
-        if(response == false) {
+        if(response === false) {
             alert('E-mail inválido! Digite novamente...');
         }
         else {
@@ -40,10 +40,10 @@ export default function Home() {
                             Receber novidades no e-mail
                         </button>
 
-                        <form class={click === false ? 'notAppear' : 'appear'}>
-                            <label for="cadastrar-email">Receber novidades no E-mail</label>
+                        <form className={click === false ? 'notAppear' : 'appear'}>
+                            <label htmlFor="cadastrar-email">Receber novidades no E-mail</label>
                             <div>
-                                <input type="email" autocomplete="none" name="cadatrar-email" placeholder="informe seu e-mail" value={email} onChange={e => {setEmail(e.target.value)}}/>
+                                <input type="email" autoComplete="none" name="cadatrar-email" placeholder="informe seu e-mail" value={email} onChange={e => {setEmail(e.target.value)}}/>
                                 <input type="submit" value="cadastrar" onClick={(e) => {
                                     e.preventDefault();
                                     itsValid();
@@ -52,16 +52,16 @@ export default function Home() {
                         </form>
 
                         <S.socialMedias>
-                            <a href=""><i class='bx bxl-facebook-circle'></i></a>
-                            <a href=""><i class='bx bxl-twitter' ></i></a>
-                            <a href=""><i class='bx bxl-linkedin' ></i></a>
-                            <a href=""><i class='bx bxl-instagram' ></i></a>
+                            <a href=""><i className='bx bxl-facebook-circle'></i></a>
+                            <a href=""><i className='bx bxl-twitter' ></i></a>
+                            <a href=""><i className='bx bxl-linkedin' ></i></a>
+                            <a href=""><i className='bx bxl-instagram' ></i></a>
                         </S.socialMedias>
                     </div>
                </S.content>
 
                <S.boxImage>
-                   <S.image src="/img/discount.svg"/>
+                   <S.image src="/img/discount.svg" alt="imagem ilustrativa de desconto"/>
                </S.boxImage>
             </S.homeContainer>
         </S.Home>

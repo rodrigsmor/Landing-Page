@@ -11,7 +11,7 @@ export const Home = styled.section`
 export const homeContainer = styled.div`
     padding: 8%;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -25,12 +25,14 @@ export const homeContainer = styled.div`
 `;
 
 export const content = styled.div`
+    width: 45vw;
     display: flex;
+    position: relative;
     flex-direction: column;
 
     .textBox {
-        padding: 30px 0 30px 20px;
         width: 620px;
+        padding: 30px 0 30px 20px;
         border-left: 3px solid #fe4365;
     }
 
@@ -72,6 +74,8 @@ export const content = styled.div`
             background: #FCD4D9;
             border-radius: 30px;
             margin: 10px 0 0;
+            display: flex;
+            justify-content: space-between;
             border: 1px solid #962062;
         }
 
@@ -81,7 +85,7 @@ export const content = styled.div`
             outline: none;
             color: #962062;
             font-size: 13px;
-            width: 15vw;
+            width: 80%;
             font-family: Poppins, sans-serif;
 
             &::-webkit-input-placeholder {
@@ -117,9 +121,24 @@ export const content = styled.div`
         }
     }
 
+    @media (min-width: 780px) and (max-width: 936px) {
+        p {
+            line-height: 18px;
+        }
+
+        .appear {
+            div {
+                width: 80%;
+            }
+        }
+    }
+
     @media screen and (max-width: 780px) { 
+        width: 90vw;
+        margin: 20px 0;
+
         .textBox {
-            width: 90vw;
+            width: 100%;
             border-left: none;
             padding: 0;
 
@@ -172,16 +191,16 @@ export const content = styled.div`
 `;
 
 export const headline = styled.div`
-    display: inline-flex;
     flex-wrap: wrap;
+    display: inline-flex;
 
     h2 {
-        width: fit-content;
-        height: fit-content;
         color: #fff;
         font-weight: 800;
         padding: 10px 25px;
+        width: fit-content;
         background: #fe4365;
+        height: fit-content;
         border: 3px solid #fe4365;
     }
 
@@ -200,9 +219,19 @@ export const headline = styled.div`
         text-align: justify;
     }
 
+    @media (min-width: 780px) and (max-width: 936px) {
+        margin: 20px 0 0;
+
+        h3 {
+            width: 500px;
+            font-size: 35px;
+            line-height: 35px;
+        }
+    }
+
     @media screen and (max-width: 780px) {
-        justify-content: center;
         width: 90vw;
+        justify-content: center;
 
         h2 {
             font-size: 15px;
@@ -220,8 +249,8 @@ export const headline = styled.div`
 `;
 
 export const boxImage = styled.div`
-    height: max-content;
     width: fit-content;
+    height: max-content;
 
     @media screen and (max-width: 780px) {
         margin: -8vh 0 0;
@@ -240,11 +269,10 @@ export const image = styled.img`
 `;
 
 export const socialMedias = styled.div`
-    position: absolute;
-    display: flex;
     width: 150px;
-    bottom: 30px;
-    right: 50px;
+    display: flex;
+    position: absolute;
+    margin: 30px 0 0 70vw;
     justify-content: space-between;
 
     a {
@@ -258,7 +286,7 @@ export const socialMedias = styled.div`
     }
 
     @media screen and (max-width: 780px) {
-        position: static;
+        position: initial;
         width: 10vw;
         margin: 0 auto;
         justify-content: center;
