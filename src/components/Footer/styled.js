@@ -74,7 +74,7 @@ export const boxItems = styled.div`
     }
 `;
 
-export const inputWrapper = styled.div`
+export const inputWrapper = styled.form`
     margin: 0;
     color: #fff;
     font-size: 15px;

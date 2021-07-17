@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import * as S from './styled';
-import { link } from 'react-scroll';
 
 export default function Home() {
 
