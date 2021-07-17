@@ -31,7 +31,7 @@ export const header = styled.header`
       margin-top: -50vh;
       flex-direction: column;
       border-radius: 0 0 25px 25px;
-      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
       transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
 
@@ -84,6 +84,7 @@ export const headerFixed = styled.div`
       outline: none;
       display: block;
       cursor: pointer;
+      margin: -2vh 0 0;
       background: transparent;
     }
 
@@ -96,6 +97,10 @@ export const headerFixed = styled.div`
       border-radius: 15px;
       background: #962062;
       transition: .3s linear;
+    }
+
+    .toggleButton.active {
+      margin: 0;
     }
 
     .toggleButton.active span:nth-child(1) {
