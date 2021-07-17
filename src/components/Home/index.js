@@ -52,10 +52,10 @@ export default function Home() {
                         </form>
 
                         <S.socialMedias>
-                            <a href=""><i className='bx bxl-facebook-circle'></i></a>
-                            <a href=""><i className='bx bxl-twitter' ></i></a>
-                            <a href=""><i className='bx bxl-linkedin' ></i></a>
-                            <a href=""><i className='bx bxl-instagram' ></i></a>
+                            <a href="www.facebook.com"><i className='bx bxl-facebook-circle'></i></a>
+                            <a href="www.twitter.com/psrodrigs"><i className='bx bxl-twitter' ></i></a>
+                            <a href="https://www.linkedin.com/in/rodrigo-m0reira-da-silva/"><i className='bx bxl-linkedin' ></i></a>
+                            <a href="www.instagram.com"><i className='bx bxl-instagram' ></i></a>
                         </S.socialMedias>
                     </div>
                </S.content>
