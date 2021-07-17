@@ -5,6 +5,20 @@ import { link } from 'react-scroll';
 export default function Home() {
 
     const [click, setClick] = useState(false);
+    const [email, setEmail] = useState();
+
+    function itsValid() {
+        const senhaRegex = /^([a-zA-Z][^<>\"!@[\]#$%¨&*()~^:;ç,\-´`=+{}º\|/\\?]{1,})@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        let response = senhaRegex.test(String(email).toLowerCase());
+
+        if(response == false) {
+            alert('E-mail inválido! Digite novamente...');
+        }
+        else {
+            alert('E-mail Válido! Operação feita com sucesso! Obrigado pelo cadastro!');
+            localStorage.setItem('email', email);
+        }
+    }
 
     return (
         <S.Home id="home">
@@ -26,13 +40,16 @@ export default function Home() {
                             Receber novidades no e-mail
                         </button>
 
-                        <div class={click === false ? 'notAppear' : 'appear'}>
+                        <form class={click === false ? 'notAppear' : 'appear'}>
                             <label for="cadastrar-email">Receber novidades no E-mail</label>
                             <div>
-                                <input type="email" autocomplete="none" name="cadatrar-email" placeholder="informe seu e-mail"/>
-                                <input type="submit" value="cadastrar"/>
+                                <input type="email" autocomplete="none" name="cadatrar-email" placeholder="informe seu e-mail" value={email} onChange={e => {setEmail(e.target.value)}}/>
+                                <input type="submit" value="cadastrar" onClick={(e) => {
+                                    e.preventDefault();
+                                    itsValid();
+                                }}/>
                             </div>
-                        </div>
+                        </form>
 
                         <S.socialMedias>
                             <a href=""><i class='bx bxl-facebook-circle'></i></a>
