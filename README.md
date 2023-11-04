@@ -8,9 +8,7 @@
 </p>
 
 <p align="center">
-    <code>
-        Status
-    </code>
+    Status
 </p>
 
 <p align="center">
