@@ -4,7 +4,7 @@
 
 <h1 align="center">E-commerce Landing Page</h1>
 <p align="center">
-    Project made as the first challenge of the <code>'Hiring Coders'</code> training program. In this challenge, I should make my own Landing Page using the technologies that were taught during the classes.
+    A simple landing page of fake marketplace named Marketlify.
 </p>
 
 <p align="center">
