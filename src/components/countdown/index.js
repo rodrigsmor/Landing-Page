@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import * as S from './styled';
 
 export default function Countdown() {
+    const [year, setYear] = useState(new Date(Date.now()).getFullYear());
     const [timerDays, setTimerDays] = useState();
     const [timerHours, setTimerHours] = useState();
     const [timerMinutes, setTimerMinutes] = useState();
@@ -9,7 +10,7 @@ export default function Countdown() {
 
     let interval = useRef();
     const startTimer = () => {
-        const countdownDate = new Date('November 26 2021 00:00:00').getTime();
+        const countdownDate = new Date(`November 26 ${year} 00:00:00`).getTime();
 
         interval = setInterval(() => {
             const now = new Date().getTime();
